@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#1C1C1C"
+    tools:context=".Activity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:text="Copyright © 2013 CRY13, All Rights Reserved"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="9sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="250dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="73dp"
+        android:background="@drawable/settings_radio"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/radioGroup1"
+            android:layout_width="230dp"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:padding="15dp" >
+
+            <RadioButton
+                android:id="@+id/radio0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:checked="true"
+                android:text="Accept the Call"
+                android:textColor="@android:color/darker_gray" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:text="Mute the Call"
+                android:textColor="@android:color/darker_gray" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="230dp"
+            android:layout_height="2dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="60dp"
+            android:background="#1C1C1C"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingTop="0dp" >
+
+    </LinearLayout>
+    </RelativeLayout>
+
+    
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="ON CALL RECEIVE"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relativeLayout1"
+        android:layout_below="@+id/relativeLayout1" >
+
+        <CheckBox
+            android:id="@+id/cbstate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvState"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:checked="false"
+            android:text="Speaker"
+            android:textColor="@android:color/white" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout02"
+            android:layout_width="230dp"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tvState"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:background="#2E2E2E"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="In Call"
+            android:textColor="@android:color/darker_gray" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bssave"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="46dp"
+        android:background="@drawable/custom_button"
+        android:text="SAVE"
+        android:textSize="20sp" />
+
+</RelativeLayout>

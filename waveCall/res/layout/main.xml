@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#1C1C1C"
+    tools:context=".Activity" >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/bstate"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="73dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center"
+        android:text="Turned ON"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bstate"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/bstate"
+        android:layout_marginBottom="14dp"
+        android:text="    Copyright © 2013 CRY13, All Rights Reserved"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="9sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bstate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:gravity="left"
+        android:text="Swipe your hand across the Proximity Sensor to Attend the call or just place the phone close to your ear"
+        android:textColor="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_above="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"
+        android:paddingRight="20dp"
+        android:src="@drawable/phone" />
+
+</RelativeLayout>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/settings_button" />
+    
+</RelativeLayout>
